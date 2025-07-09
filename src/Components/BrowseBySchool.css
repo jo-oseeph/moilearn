@@ -201,3 +201,185 @@
     font-size: 15px;
   }
 }
+
+/* Enhanced responsive styles for Browse by School */
+@media (max-width: 1024px) {
+  .schools-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+  
+  .school-card {
+    padding: 20px;
+    min-width: 0; /* Prevent overflow */
+  }
+}
+
+@media (max-width: 768px) {
+  .browse-by-school-container {
+    padding: 12px;
+  }
+  
+  .schools-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  .school-card {
+    padding: 18px;
+    max-width: 100%;
+  }
+  
+  .school-icon-container {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 12px;
+  }
+  
+  .school-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .school-name {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+  
+  .school-notes-count {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 640px) {
+  .schools-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  
+  .school-card {
+    padding: 16px;
+  }
+  
+  .school-icon-container {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+  }
+  
+  .school-icon {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .school-name {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .school-notes-count {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .browse-by-school-container {
+    padding: 8px;
+  }
+  
+  .browse-by-school-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .browse-by-school-header h2 {
+    font-size: 20px;
+  }
+  
+  .schools-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  
+  .school-card {
+    padding: 14px;
+  }
+  
+  .school-icon-container {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 8px;
+  }
+  
+  .school-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .school-name {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  
+  .school-notes-count {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 360px) {
+  .browse-by-school-container {
+    padding: 6px;
+  }
+  
+  .schools-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .school-card {
+    padding: 12px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .school-icon-container {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 6px;
+  }
+  
+  .school-icon {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .school-name {
+    font-size: 13px;
+  }
+  
+  .school-notes-count {
+    font-size: 10px;
+  }
+}
+
+/* Additional utility classes for overflow prevention */
+.featured-notes-container,
+.browse-by-school-container {
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.featured-notes-grid,
+.schools-grid {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.featured-note-card,
+.school-card {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}

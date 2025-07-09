@@ -1,22 +1,22 @@
 /* Hero Container */
 .hero-container {
-  height: 100vh;
+  height: 90vh;
   background: #16a34a;
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 64px; /* Account for fixed navbar */
-  padding-bottom: 64px;
-  box-sizing: border-box;
+  padding-bottom: 40px;
+  padding-top: 20px;
 
 }
+
 /* Hero Content */
 .hero-content {
   position: relative;
   z-index: 10;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 16px;
   width: 100%;
@@ -29,12 +29,27 @@
 }
 
 .hero-title {
-  font-size: 32px;
+  font-size: 35px;
   font-weight: 600;
   color: white;
   margin-bottom: 24px;
   line-height: 1.1;
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-title-accent {
+  color: rgba(251, 146, 60, 0.9);
+  display: inline-block;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0%, 100% { 
+    color: rgba(251, 146, 60, 0.9);
+  }
+  50% { 
+    color: rgba(255, 255, 255, 0.9);
+  }
 }
 
 .hero-subtitle {
@@ -120,25 +135,72 @@
   width: 20px;
 }
 
+
 /* Responsive Design */
-@media (max-width: 768px) {
-  .hero-container {
-    padding-top: 48px; /* Adjust for smaller screens */
-    padding-bottom: 48px;
-    height: 80vh;
+@media (min-width: 640px) {
+  .hero-content {
+    padding: 0 24px;
   }
+  
+  .hero-buttons {
+    flex-direction: row;
+    gap: 24px;
+  }
+  
   .hero-title {
-    font-size: 32px;
-    font-weight: 600;
+    font-size: 56px;
   }
-
+  
   .hero-subtitle {
-    font-size: 18px;
-    margin-bottom: 32px;
+    font-size: 22px;
   }
+}
 
-  .hero-btn {
-    width: 100%;
-    max-width: 300px;
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 64px;
+  }
+  
+  .hero-subtitle {
+    font-size: 24px;
+  }
+  
+  .floating-element-1 {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .floating-element-2 {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .floating-element-3 {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-content {
+    padding: 0 32px;
+  }
+  
+  .hero-title {
+    font-size: 72px;
+  }
+  
+  .hero-subtitle {
+    font-size: 26px;
+  }
+  
+  .hero-buttons {
+    gap: 32px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-title {
+    font-size: 80px;
   }
 }

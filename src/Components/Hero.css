@@ -122,7 +122,7 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .Hero-container {
+  .hero-container {
     padding-top: 48px; /* Adjust for smaller screens */
     padding-bottom: 48px;
     height: 80vh;

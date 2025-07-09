@@ -5,20 +5,12 @@ import './Hero.css';
 const Hero = () => {
   return (
     <div className="hero-container">
-      {/* Animated background elements */}
-      <div className="background-elements">
-        <div className="bg-orb bg-orb-1"></div>
-        <div className="bg-orb bg-orb-2"></div>
-        <div className="bg-orb bg-orb-3"></div>
-      </div>
-
-      {/* Hero Content */}
       <div className="hero-content">
         <div className="hero-text">
           <h1 className="hero-title">
             Share Knowledge,
             <br />
-            <span className="hero-title-accent">Excel Together</span>
+            <span className="hero-title">Excel Together</span>
           </h1>
           
           <p className="hero-subtitle">
@@ -38,11 +30,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
-      {/* Floating elements */}
-      <div className="floating-element floating-element-1"></div>
-      <div className="floating-element floating-element-2"></div>
-      <div className="floating-element floating-element-3"></div>
     </div>
   );
 };
